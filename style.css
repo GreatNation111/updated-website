@@ -1,0 +1,785 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:rgba(5, 0, 32) ;
+    color: rgb(212, 245, 245) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    margin-top: 8rem;
+   margin-left: 2rem;
+   animation: cutin 2s ease forwards;
+   opacity: 0;
+   position: relative;
+   right: 0;
+   font-family:cursive;
+   font-style: oblique;
+}
+@keyframes cutin{
+   from{
+       right:100px;
+       opacity: 0;
+   }
+   to{
+       opacity: 1;
+
+   }
+}
+h2{
+    position: relative;
+    display: inline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+h2::after{
+    content:"";
+    width: 250px;
+    top: 50%;
+    left: 8rem;
+    height:2px;
+    background-color: rgb(174, 239, 223);
+    position:absolute;
+    display:inline ;
+}
+h2::before{
+    content:"";
+    width: 250px;
+    top: 50%;
+    right: 8rem;
+    height:2px;
+    background-color: rgb(174, 239, 223);
+    position:absolute;
+    display:inline ;
+}
+nav{
+    background-color:antiquewhite;
+    height: 70px;
+    width:100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+label.logo{
+    font-size:30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    color: black;
+}
+label.logo::after{
+    content:"Great Nation";
+    font-size:30px;
+    line-height: 80px;
+    padding: 0 0px;
+    font-weight: bold;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    overflow: hidden;
+    display: inline;
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav  ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav  ul li a{
+    color:black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.active,a:hover{
+    background:white;
+    transition: 5s;
+}
+.check{
+    display: none;
+}
+.resume{
+    border: 2px solid  rgb(212, 245, 245);
+    width:220px;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    animation:slidein 2s forwards ;
+    margin: 1rem;
+    position: relative;
+    left: 0;
+}
+@keyframes slidein{
+    from{
+      opacity: 0;
+      right:200px;
+    }
+    to{
+        opacity: 1;
+        left:30px;
+    }
+}
+    .names{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        animation: fadeinout 3s ease 2s forwards;
+        position: relative;
+        opacity: 0;
+    }
+    @keyframes fadeinout{
+         to{
+           opacity: 1;
+        }
+    }
+    .names .text{
+        font-weight: 400; 
+       color: rgb(212, 245, 245);
+        font-size: 30px;
+    }.names .options{
+        margin-left: 15px;
+        height: 90px;
+        line-height:90px ;
+        overflow: hidden;
+    }
+    .options li{
+        font-weight: 500;
+        font-size: 30px;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4)  1s infinite;
+    }
+    @keyframes slide{
+        100%{
+            top: -360px;
+        }
+    }
+    .options li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+    }
+    .options li span:after{
+       content:'';
+       position:absolute;
+       left: 0;
+       top:0;
+       width: 100%;
+       height:100%;
+       background:rgba(5, 0, 32);
+       border-left:3px solid rgb(174, 239, 223) ;
+       animation: typing 3s steps(13) 4s infinite,blink 1s steps(13) 3s infinite;
+       
+    }
+    @keyframes blink{
+  
+        to{
+        color: transparent;
+        
+        }
+    }
+    @keyframes typing{
+    40%, 60% {
+            left:calc(100%+30px);
+        }
+        100%{
+            left: 110%;
+            right: 0;
+            top: 0;
+        }
+    }
+#aboutme{
+    line-height: 1.6;
+    text-align: center;
+    margin: 2rem; 
+    transform: translateY(3rem);
+    animation: fadeinup 2s ease 4s forwards;
+    opacity: 0;
+}
+@keyframes fadeinup{
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.my-image{
+  display: none;
+}
+#skills{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(3rem);
+    animation: fadeinup 2s ease 6s forwards;
+    opacity: 0;
+}
+@keyframes fadeinup{
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+table{
+    margin: 1rem;
+}
+td{
+    padding: 0.8rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1rem;
+    animation:slidein 2s  ease 6s forwards ;
+    position: relative;
+    left: 0;
+    opacity: 0;
+}
+@keyframes slidein{
+    from{
+      opacity: 0;
+      right:200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#portfolio{
+    animation: fadeinup 2s ease 7s forwards;
+    opacity: 0;
+}
+@keyframes fadeinup{
+
+    to{
+        opacity: 1;
+    }
+}
+.first-container{
+    margin: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.football{
+    background-color:rgb(212, 245, 245);
+    color:rgba(5, 0, 32, 0.872);
+    width: 500px;
+    margin: 2rem;
+    padding: 1.3rem;
+    line-height: 25px;
+    animation:slidein2 2s ease 8s forwards;
+    position: relative;
+    opacity: 0;
+    right: 0;
+    border-radius: 1rem;
+}
+@keyframes slidein2{
+    from{
+      right:200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+  
+.football>ul>li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+header>p:nth-child(2){
+text-transform:capitalize;
+font-size: 20px;
+}
+.football>section{
+    padding: 2rem;
+}
+span{
+    margin: 1rem;
+}
+.question{
+    background-color:rgb(212, 245, 245);
+    color:rgba(5, 0, 32, 0.872);
+    width: 500px;
+    margin:2rem;
+    padding: 1.3rem;
+    line-height: 25px;
+    text-align: right;
+    animation:slidein 2s ease 9s forwards ;
+    position: relative;
+    opacity: 0;
+    left: 0;
+    border-radius: 1rem;
+}
+@keyframes slidein{
+    from{
+      left:200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.question>ul>li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+.question>section{
+    padding: 2.8rem;
+}
+img{
+    width: 30px;
+}
+h4{
+    text-align: center;
+}
+.second-container{
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto auto;
+    margin: 3rem;
+    width: 100%;
+}.second-container a:hover{
+    background: none;
+}
+.second-container>div{
+    background-color:rgb(212, 245, 245);
+    color:rgba(5, 0, 32, 0.872);
+    margin: 2rem;
+    padding: 1rem;
+    width:27rem;
+    line-height: 25px;
+    border-radius: 0.5rem;
+}
+
+.second-container ul>li{
+    padding: 0.3rem;
+    display: inline-block;
+    margin-top: 2rem;
+}
+p{
+    margin-top: 0.5rem;
+}
+header>ul>li:first-child{
+    padding-right: 15rem;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateY(3rem);
+    animation: fadeinup 2s ease 10s forwards;
+    opacity: 0;
+}
+@keyframes fadeinup{
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h4{
+    font-size: 40px;
+    margin: 2rem;
+}
+.hr1{
+    width:450px;
+    display: inline;
+    position: relative;
+    float: left;
+}
+.hr2{
+    width: 450px;
+    float: right;
+    position: relative;
+    display: inline;
+}
+hr+a{
+    margin: 2rem;
+    border: 2px solid rgb(212, 245, 245);
+    padding: 0.7rem;
+    color: rgb(212, 245, 245);
+}
+h5{
+    font-size: 26px;
+}
+form{
+    background-color:rgb(212, 245, 245);
+    color:rgba(5, 0, 32, 0.872);
+    margin: 2rem;
+    padding: 1rem;
+    line-height: 25px;
+    width: 45vw;
+    border-radius: 1rem;
+
+}
+form>div>span{
+    display: block;
+    margin: 0;
+}
+form>div>span>img{
+    position: relative;
+    margin-right: 0.5rem;
+    top: 0.6rem;
+    width:26px;
+}
+p+input,textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(212, 245, 245);
+    margin-left: 5rem;
+    width: 80%;
+}
+button{
+    float: right;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: rgb(212, 245, 245);   
+}
+.attribution{
+    text-align: center;
+    color:  rgb(212, 245, 245); 
+}
+
+
+
+
+
+
+/* mobile display */
+
+@media (max-width:800px) {
+   
+label.logo::after{
+    content:"GN";
+    font-size:30px;
+    line-height: 80px;
+    padding: 0 0px;
+    font-weight:light;
+    color: rgb(174, 239, 223) ;
+    
+}
+    h1{
+    font-size: 25px;
+    text-align: left; 
+    animation: cutin 2s ease forwards;
+    opacity: 0;
+    position: relative;
+    right: 0;
+ }
+ @keyframes cutin{
+    from{
+        right:100px;
+        opacity: 0;
+        transform: rotatez(40deg);
+    }
+    to{
+        opacity: 1;
+
+    }
+ }
+ h2{
+    position: relative;
+    display: inline;
+}
+h2::after{
+    content:"";
+    width: 250px;
+    top: 50%;
+    left: 8rem;
+    height:2px;
+    background-color: rgb(174, 239, 223);
+    position:absolute;
+    display:inline ;
+}
+h2{
+    position: relative;
+    display: inline;
+}
+h2:before{
+    content:"";
+    display: none;
+}
+    label.logo{
+        font-size:30px;
+        line-height: 80px;
+        padding: 0 40px;
+        font-weight: bold;
+    } 
+    
+nav{
+    background-color:rgba(5, 0, 32);
+    height: 60px;
+    width:100%;
+}
+
+.resume{
+    width:50%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    word-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+#aboutme{
+    line-height: 1.6;
+    text-align: left; 
+    transform: translateY(3rem);
+    animation: fadeinup 2s ease 4s forwards;
+    opacity: 0;
+}
+@keyframes fadeinup{
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.my-image{
+    width: 350px;
+   margin-left:6rem;
+   margin-top: 0;
+   margin-bottom: 0;
+   border-radius: 1rem;
+   animation: fadeinup1 4s ease 5s forwards;
+   opacity: 0;
+   position: relative;
+   display:block ;
+}
+@keyframes fadeinup1{
+   from{
+       transform: rotateY(10deg);
+   }
+   to{
+       opacity: 1;
+   }
+}
+h3{
+    font-size: 30px;
+    text-align: left;
+    margin:1rem;
+    animation:slidein 2s  ease 6s forwards ;
+    position: relative;
+    left: 0;
+    opacity: 0;
+}
+@keyframes slidein{
+    from{
+      opacity: 0;
+      right:200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    .first-container{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .football{
+        width: 25rem;
+        text-align: right;
+        animation:slidein2 2s ease 8s forwards;
+        margin: 1rem;
+        position: relative;
+        opacity: 0;
+        right: 0;
+    }
+    @keyframes slidein2{
+        from{
+          right:200px;
+          transform: rotate(50deg);
+        }
+        to{
+            opacity: 1;
+        }
+    }
+      
+  .football>ul>li{
+    display: inline-block;
+    padding: 0.5rem;
+   }
+    .question{
+        width: 25rem;
+        text-align: left;
+        animation:slidein 2s ease 9s forwards;
+        margin: 1rem;
+        position: relative;
+        left: 0;
+        opacity: 0;
+    
+    }
+    @keyframes slidein{
+        from{
+          left:200px;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+        
+    }
+    h4{
+        text-align: center;
+        font-size: 30px;
+        animation:slidein2 2s ease 11s forwards;
+        margin: 1rem;
+        position: relative;
+        opacity: 0;
+        right: 0;
+    }
+    @keyframes slidein2{
+        from{
+          right:200px;
+          transform: rotate(50deg);
+        }
+        to{
+            opacity: 1;
+        }
+    }
+ @media  (max-width:800px){
+    .second-container{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+  
+    .second-container>div{
+        width:25rem;
+        margin:1rem;
+        padding: 1rem;
+    }
+ }
+    .landing-page{
+        animation:slidein3 2s ease 12s forwards;
+        margin: 1rem;
+        position: relative;
+        right: 0;
+        opacity: 0;
+    
+    }
+    @keyframes slidein3{
+        from{
+          right:200px;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .Testimonials{
+        animation:slidein4 2s ease 13s forwards;
+        margin: 1rem;
+        position: relative;
+        left: 0;
+        opacity: 0;
+    
+    }
+    @keyframes slidein4{
+        from{
+          left:200px;
+          transform: rotatez(50deg);
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .nft{
+        animation: fadeinup1 2s ease 14s forwards;
+        opacity: 0;
+        position: relative;
+    }
+    @keyframes fadeinup1{
+        from{
+            transform: rotateY(50deg);
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .contact,hr,h5{
+        animation:slidein5 2s ease 15s forwards;
+        margin: 1rem;
+        position: relative;
+        opacity: 0;
+        right: 0;
+    }
+    @keyframes slidein5{
+        from{
+          right:200px;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    form{
+        width: 25rem;
+        animation:slidein6 2s ease 16s forwards;
+        margin: 1rem;
+        position: relative;
+        left: 0;
+        opacity: 0;
+    
+    }
+    @keyframes slidein6{
+        from{
+          left:200px;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .hello{
+        animation:slidein6 2s ease 16s forwards;
+        margin: 1rem;
+        position: relative;
+        left: 0;
+        opacity: 0;
+    
+    }
+    @keyframes slidein6{
+        from{
+          left:200px;
+
+        }
+        to{
+            opacity: 1;
+        }
+    }
+      
+    p+input,textarea{
+        margin-left: 1rem;
+    }
