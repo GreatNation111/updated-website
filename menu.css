@@ -7,7 +7,7 @@
     }
     .menu-wrap .check{
         position: absolute;
-        top: 0;
+        top: 7px;
         left: 350px;
         z-index: 2;
         cursor: pointer;
@@ -18,7 +18,7 @@
     }
     .menu-wrap .hamburger{
         position: absolute;
-        top: 0;
+        top: 7px;
         left: 350px;
         z-index: 1;
         width: 60px;

@@ -540,7 +540,7 @@ h2:before{
     
 nav{
     background-color:rgba(5, 0, 32);
-    height: 60px;
+    height: 70px;
     width:100%;
 }
 
@@ -574,7 +574,7 @@ nav{
    align-items: center;
 }
 .my-image>img{
-    width:25rem ;
+    width:20rem ;
     border-radius: 1rem;
     animation: fadeinup1 4s ease 5s forwards;
     opacity: 0;
