@@ -475,11 +475,9 @@ button{
 
 
 
-
-
 /* mobile display */
 
-@media (max-width:765px) {
+@media only screen and (max-width:765px) {
    
 label.logo::after{
     content:"GN";
