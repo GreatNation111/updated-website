@@ -672,7 +672,7 @@ h3{
             opacity: 1;
         }
     }
- @media  (max-width:800px){
+ @media  (max-width:1765px){
     .second-container{
         display: flex;
         flex-direction:column;
