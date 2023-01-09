@@ -17,7 +17,7 @@ nav{
     .menu-wrap .check{
         position: absolute;
         top: 1.2rem;
-        left: 450px;
+        left: 350px;
         z-index: 2;
         cursor: pointer;
         width: 50px;
@@ -28,7 +28,7 @@ nav{
     .menu-wrap .hamburger{
         position: absolute;
         top: 1.2rem;
-        left:450px;
+        left:350px;
         z-index: 1;
         padding: 0;
         width: 60px;

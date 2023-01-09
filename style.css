@@ -130,7 +130,7 @@ label.logo{
 
     .resume{
         border: 2px solid  rgb(212, 245, 245);
-        width:50%;
+        width:40%;
         text-align: center;
         word-spacing: 0.2rem;
         padding: 0.5rem;
@@ -182,6 +182,9 @@ label.logo{
             opacity: 1;
             transform: translateY(0);
         }
+    }
+    #aboutme p{
+        margin-top: 2rem;
     }
 
     .my-image{
@@ -246,7 +249,8 @@ label.logo{
     h3{
         font-size: 30px;
         text-align: left;
-        margin:1rem;
+        margin-top:8rem;
+        margin-left: 2rem;
         animation:slidein 2s  ease 6s forwards ;
         position: relative;
         left: 0;
@@ -275,9 +279,8 @@ label.logo{
     .football{
         background-color:rgb(212, 245, 245);
         color:rgba(5, 0, 32, 0.872);
-        width: 25rem;
+        width: 22rem;
         margin: 2rem;
-
         padding: 1.3rem;
         line-height: 25px;
         animation:slidein2 2s ease 8s forwards;
@@ -313,8 +316,8 @@ label.logo{
     .question{
         background-color:rgb(212, 245, 245);
         color:rgba(5, 0, 32, 0.872);
-        width: 25rem;
-        margin:1rem;
+        width: 22rem;
+        margin-top:8rem;
         text-align: left;
         padding: 1.3rem;
         line-height: 25px;
@@ -350,9 +353,9 @@ label.logo{
 
         h4{
             text-align: center;
-            font-size: 30px;
+            font-size: 35px;
             animation:slidein2 2s ease 11s forwards;
-            margin: 1rem;
+            margin-top: 12rem;
             position: relative;
             opacity: 0;
             right: 0;
@@ -373,6 +376,7 @@ label.logo{
             justify-content: center;
             flex-direction: column;
             width: 100%;
+            
         }
         .second-container a:hover{
             background: none;
@@ -380,10 +384,9 @@ label.logo{
         .second-container>div{
             background-color:rgb(212, 245, 245);
             color:rgba(5, 0, 32, 0.872);
-            margin: 1rem;
+            margin: 2rem;
             padding: 1rem;
-            width:25rem;
-            line-height: 25px;
+            width:20rem;
             border-radius: 0.5rem;
         }
         
@@ -396,7 +399,7 @@ label.logo{
             margin-top: 0.5rem;
         }
         .second-container header>ul>li:first-child{
-            padding-right: 15rem;
+            padding-right: 10rem;
         }
      
         .landing-page{
@@ -452,6 +455,7 @@ label.logo{
             justify-content: center;
             align-items: center;
             width: 100%;
+            margin-top: 5rem;
             transform: translateY(3rem);
             animation: fadeinup 2s ease 10s forwards;
             opacity: 0;
@@ -529,7 +533,7 @@ label.logo{
             position: relative;
             padding: 1rem;
             line-height: 25px;
-            width: 25rem;
+            width: 22rem;
             border-radius: 1rem;
         }
         
@@ -570,6 +574,7 @@ label.logo{
         
         .attribution{
             text-align: center;
+            margin: 8rem;
             color:  rgb(212, 245, 245); 
         }
              
