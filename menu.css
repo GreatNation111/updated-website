@@ -87,8 +87,8 @@ nav{
         top: 0;
         left:auto;
         right: 0;
-        width: 50%;
-        height: 100%;
+        width: 60%;
+        height: 100vh;
         visibility: hidden;
         overflow:hidden;
         display: flex;
